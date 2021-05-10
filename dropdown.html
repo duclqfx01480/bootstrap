@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dropdown</title>
+        
+        <!-- Bootstrap CDN -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Dropdown</h2>
+            <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Menu
+                <span class="caret"></span></button>
+
+                <ul class="dropdown-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <br>
+
+            <div class="dropdown">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Home</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Information</li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <br>
+            <h2>Active and Disabled Items</h2>
+            <div class="dropdown">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Menu
+                    <span class="caret"></span>
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">News</a></li>
+                    <li class="disabled"><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Have a question?</a></li>
+                </ul>
+            </div>
+
+            <br>
+            <h2>Dropup</h2>
+            <div class="dropup">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span> Menu                    
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">News</a></li>
+                    <li class="disabled"><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Have a question?</a></li>
+                </ul>
+            </div>
+
+            
+        </div> <!-- end container -->
+        
+    </body>
+</html>

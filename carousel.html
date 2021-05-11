@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carousel</title>
+        
+        <!-- Bootstrap4 CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <style>
+            .carousel-inner img{
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicator -->
+                <ul class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.w3schools.com/bootstrap4/la.jpg" alt="LA" width="1100" height="500">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="https://www.w3schools.com/bootstrap4/chicago.jpg" alt="chicago" width="1100" height="500">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="https://www.w3schools.com/bootstrap4/ny.jpg" alt="ny" width="1100" height="500">
+                    </div>
+
+                </div>
+                
+                
+                <!-- Left and Right controls -->
+                <a href="#carousel" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+
+                <a href="#carousel" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+            <h2>Add Caption to Slide</h2>
+            <div id="carousel2" class="carousel slide" data-ride="carousel">
+                <!-- Indicator -->
+                <ul class="carousel-indicators">
+                    <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel2" data-slide-to="1"></li>
+                    <li data-target="#carousel2" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.w3schools.com/bootstrap4/la.jpg" alt="LA" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <h3>Los Angeles</h3>
+                            <p>We had a such great time in LA!</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="https://www.w3schools.com/bootstrap4/chicago.jpg" alt="chicago" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <h3>Chicago</h3>
+                            <p>Best things in Chicago</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="https://www.w3schools.com/bootstrap4/ny.jpg" alt="ny" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <h3>New York</h3>
+                            <p>Where to go in NY?</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                
+                <!-- Left and Right controls -->
+                <a href="#carousel2" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+
+                <a href="#carousel2" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+
+
+        </div> <!-- end container -->
+        
+    </body>
+</html>

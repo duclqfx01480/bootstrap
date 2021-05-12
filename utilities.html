@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Utilities</title>
+        
+        <!-- Bootstrap4 CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+
+            });
+        </script>
+
+        <style>
+            .b{
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                margin: 6px;
+            }
+
+            .radius{
+                width: 70px;
+                height: 70px;
+                display: inline-block;
+                margin: 6px;
+                background-color: #555;
+                color: white;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h2>Border</h2>
+            <div class="row">
+                <span class="b border"></span>
+                <span class="b border border-0"></span>
+                <span class="b border border-top-0"></span>
+                <span class="b border border-right-0"></span>
+                <span class="b border border-bottom-0"></span>
+                <span class="b border border-left-0"></span>
+            </div>
+
+            <h2>Colored Border</h2>
+            <div class="row">
+                <span class="border border-primary"></span>
+                <span class="border border-secondary"></span>
+                <span class="border border-success"></span>
+                <span class="border border-danger"></span>
+                <span class="border border-warning"></span>
+                <span class="border border-info"></span>
+                <span class="border border-light"></span>
+                <span class="border border-dark"></span>
+            </div>
+
+            <h2>Border with radius</h2>
+            <div class="row">
+                <span class="radius rounded-sm">rounded-sm</span>
+                <span class="radius rounded">rounded</span>
+                <span class="radius rounded-lg">rounded-lg</span>
+                <span class="radius rounded-top">rounded-top</span>
+                <span class="radius rounded-right">rounded-right</span>
+                <span class="radius rounded-bottom">rounded-bottom</span>
+                <span class="radius rounded-left">rounded-left</span>
+                <span class="radius rounded-circle">rounded-circle</span>
+                <span class="radius rounded-0">rounded-0</span>
+            </div>
+
+            <h2>Float and Clearfix</h2>
+            <div class="clearfix sticky-top">
+                <span class="float-left bg-success p-2">Float left</span>
+                <span class="float-right bg-warning p-2">Float right</span>
+            </div>
+
+            <h2>Align center</h2>
+            <div class="mx-auto bg-danger" style="width: 150px; text-align: center; color: white;">Centered</div>
+            
+            <h2>Width</h2>
+            <div class="w-25 bg-success">Width 25%</div>
+            <div class="w-50 bg-warning">Width 50%</div>
+            <div class="w-75 bg-danger">Width 75%</div>
+            <div class="w-100 bg-info">Width 100%</div>
+            <div class="mw-100 bg-secondary">Max Width 100%</div>
+
+            <h2>Height</h2>
+            <div style="height: 200px; background-color: #ddd;">
+                <div class="h-25 d-inline-block bg-success p-2">Height 25%</div>
+                <div class="h-50 d-inline-block bg-warning p-2">Height 50%</div>
+                <div class="h-75 d-inline-block bg-danger p-2">Height 75%</div>
+                <div class="h-100 d-inline-block bg-info p-2">Height 100%</div>
+                <div class="mh-100 d-inline-block bg-secondary p-2" style="height: 500px;">Max Height 100%</div>
+            </div>
+
+            <h2>Spacing</h2>
+            <div class="container">
+                <div class="pt-4 bg-success">top padding 1.5rem</div>
+                <div class="p-5 bg-warning">padding on all sides 3rem</div>
+                <div class="m-5 pb-5 bg-danger">margin on all sides- 3rem, bottom padding-3rem</div> 
+            </div>
+
+            <h2>Shadow</h2>
+            <div class="container">
+                <div class="shadow-none p-4 mb-4 bg-light">No shadow</div>
+                <div class="shadow-sm p-4 mb-4 bg-white">Small shadow</div>
+                <div class="shadow p-4 mb-4 bg-white">Default shadow</div>
+                <div class="shadow-lg p-4 mb-4 bg-white">Large shadow</div>
+            </div>
+
+            <h2>Position</h2>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+                <a href="#" class="navbar-brand">Brand</a>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <h2>Text color</h2>
+            <div class="container">
+                <p class="text-muted">Muted text</p>
+                <p class="text-primary">Primary text</p>
+                <p class="text-secondary">Secondary text</p>
+                <p class="text-success">Success text</p>
+                <p class="text-warning">Warning text</p>
+                <p class="text-danger">Danger text</p>
+                <p class="text-info">Info text</p>
+                <p class="text-dark">Dark text</p>
+                <p class="text-black-50">Text Black 50</p>
+                <p class="text-white">White text</p>
+            </div>
+
+            <div class="mb-5"></div>
+
+            
+
+            
+            
+
+        </div> <!-- end container -->
+        
+    </body>
+</html>
